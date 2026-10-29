@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#94c3c5"/><stop offset=".56" stop-color="#e1e6d3"/><stop offset="1" stop-color="#f5e4b8"/></linearGradient>
+ <linearGradient id="far" x2="0" y2="1"><stop stop-color="#93b8af"/><stop offset="1" stop-color="#ced9be"/></linearGradient>
+ <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#607e70"/><stop offset="1" stop-color="#193f38"/></linearGradient>
+ <linearGradient id="river" x2="0" y2="1"><stop stop-color="#d5e4c9"/><stop offset="1" stop-color="#7ab6b3"/></linearGradient>
+ <linearGradient id="stone" x2="1" y2=".2"><stop stop-color="#a9b8a3"/><stop offset=".5" stop-color="#e5e3c4"/><stop offset="1" stop-color="#bac8b4"/></linearGradient>
+ <radialGradient id="sun"><stop stop-color="#fff5cf" stop-opacity=".9"/><stop offset="1" stop-color="#fff3ca" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+ <g id="pine"><path d="M0 0-32 70-19 68-44 108-28 105-56 150H-5v35H5v-35h51l-28-45 16 3L19 68l13 2Z" fill="#254f43"/></g>
+ <g id="spire"><path d="M-18 0H18V-110H-18Z" fill="url(#stone)"/><path d="M-25-109 0-171 25-109Z" fill="#416d68"/><path d="M-3-161h6v-35h-6Z" fill="#a6ad85"/><path d="M0-194 28-184 0-176Z" fill="#cfb77a"/><path d="M-6-45v-27q6-13 12 0v27Z" fill="#54756a"/></g>
+ <g id="roof"><path d="M-35 0h70v-48h-70Z" fill="#d4d3b2"/><path d="M-45-48 0-78 45-48Z" fill="#6e8171"/></g>
+</defs>
+<g filter="url(#grain)">
+<path fill="url(#sky)" d="M0 0h1600v1000H0Z"/>
+<ellipse cx="1100" cy="245" rx="420" ry="400" fill="url(#sun)"/>
+<g fill="#fff8de" opacity=".35" filter="url(#soft)"><path d="M-30 200q210-60 440-3t350 1v25H-30Z"/><path d="M750 110q200-45 430-8t440-9v30H750Z"/></g>
+<path d="M0 435 160 277 241 359 390 196 492 325 576 263 762 440 925 318 1060 401 1213 229 1391 378 1504 307 1600 430v570H0Z" fill="#adcbc0"/>
+<path d="m190 357 200-161 102 129-85-61-20 37-24-13-60 43Z" fill="#e6e7ce" opacity=".65"/>
+<path d="m1100 353 113-124 178 149-132-73-31 29-31-21Z" fill="#e6e7ce" opacity=".6"/>
+<path d="M0 503q155-105 305-31t268 29 253-31 250 34 280-66 244 49v513H0Z" fill="url(#far)"/>
+<path d="M0 605q250-90 390 5t410-18 356-10 444-24v442H0Z" fill="#8ea995"/>
+<!-- The citadel, built into a wooded island -->
+<path d="m870 566 90-48 166-14 142 35 65 63-60 83-305 21-51-75Z" fill="#7e9780"/>
+<g transform="translate(1085 545)">
+<path d="M-132 1V-97h264V1Z" fill="url(#stone)"/>
+<path d="M-142-97h284v-18h-19v9h-23v-9H78v9H55v-9H32v9H9v-9h-23v9h-23v-9h-23v9h-23v-9h-23v9h-36Z" fill="#d1d7b9"/>
+<path d="M-49-96V-193H49v97Z" fill="url(#stone)"/>
+<path d="m-61-192 61-71 61 71Z" fill="#477770"/>
+<use href="#spire" transform="translate(-127 -15) scale(1.05)"/><use href="#spire" transform="translate(125 -15) scale(1.15)"/>
+<use href="#spire" transform="translate(0 -173) scale(.6)"/>
+<path d="M-18 0v-46q18-31 36 0V0Z" fill="#536f60"/>
+<g fill="#698577"><path d="M-80-50h10v23h-10Z"/><path d="M70-50h10v23H70Z"/><path d="M-7-155H7v25H-7Z"/></g>
+<use href="#roof" transform="translate(-83 26) scale(.8)"/><use href="#roof" transform="translate(69 30) scale(.7)"/>
+<path d="M-161 39v-22h322v22Z" fill="#b4c1a5"/>
+</g>
+<path d="M1036 553q-58 65-192 84T652 740q-26 68 126 103t73 157H1600V805q-333 15-414-73t-100-179Z" fill="url(#river)"/>
+<g fill="none" stroke="#e0e6c9" opacity=".4"><path d="M920 640q67 10 134-2"/><path d="M789 703q90 18 191-4"/><path d="M831 837q242 45 456 0"/><path d="M898 932q259 25 467-2"/></g>
+<path d="M0 667q167-100 321-54t378 90l-78 57q-102 83 21 163L563 1000H0Z" fill="url(#hill)"/>
+<path d="M1600 645q-181-51-318-8l-105 73 105 58 318 44Z" fill="#668f77"/>
+<!-- Arched stone bridge -->
+<path d="M1009 629q150-14 240 88l-19 20q-100-84-225-83Z" fill="#d2cfaa"/>
+<path d="M1013 650q38-3 59 3l-7 33-11-1q-2-29-41-25Zm77 9 39 12-9 35-10-4q5-25-26-33Zm57 22 38 22-16 35-9-6q11-20-19-40Z" fill="#b0b998"/>
+<path d="M1006 629q151-15 245 87" stroke="#eee2b8" stroke-width="5" fill="none"/>
+<path d="M0 824q185-105 312-22t210 28l80 170H0Z" fill="#305b46"/>
+<path d="M1600 794q-198-44-300 58t-164 148h464Z" fill="#355f48"/>
+<path d="M306 1000q-8-92 122-143t103-116q97 76 13 114t-98 145Z" fill="#b7b18a"/>
+<g opacity=".85"><use href="#pine" transform="translate(69 421) scale(1.4)"/><use href="#pine" transform="translate(154 495) scale(.9)"/><use href="#pine" transform="translate(14 529) scale(1.3)"/><use href="#pine" transform="translate(266 621) scale(.85)"/><use href="#pine" transform="translate(1530 507) scale(1.4)"/><use href="#pine" transform="translate(1441 580) scale(.9)"/></g>
+<g fill="#1e4839"><use href="#pine" transform="translate(55 670) scale(1.9)"/><use href="#pine" transform="translate(183 771) scale(1.2)"/><use href="#pine" transform="translate(1554 686) scale(1.9)"/><use href="#pine" transform="translate(1431 813) scale(1.15)"/></g>
+<g fill="#dec88f" opacity=".65"><ellipse cx="231" cy="925" rx="4" ry="7"/><ellipse cx="262" cy="953" rx="3" ry="6"/><ellipse cx="121" cy="942" rx="3" ry="5"/><ellipse cx="1356" cy="952" rx="4" ry="6"/></g>
+<g fill="none" stroke="#5e8176" stroke-width="2" opacity=".65"><path d="M715 226q8-8 15 0 8-8 15 0"/><path d="M753 208q5-6 10 0 5-6 10 0"/><path d="M690 244q5-6 10 0 5-6 10 0"/></g>
+</g></svg>
